@@ -1,0 +1,42 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-main: #62ab00;
+    --color-white: #ffffff;
+    --color-black: #000000;
+}
+
+.nav-menus ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.nav-menus ul li {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.nav-menus ul li a {
+    text-transform: uppercase;
+    font-size: 15px;
+    color: var(--color-main);
+    transition: color .3s ease;
+    position: relative;
+}
+
+.nav-menus ul li a::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: var(--color-main);
+}
+
+.nav-menus ul li a .alert-danger ul {
+    margin-bottom: 0;
+}
